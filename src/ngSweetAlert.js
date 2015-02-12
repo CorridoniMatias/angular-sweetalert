@@ -11,6 +11,11 @@
             var args = [].slice.call(arguments, 0);
             al.apply(undefined, args);
         };
+        
+        this.disableButtons = function()
+        {
+            al.disableButtons.call(undefined);
+        };
     };
 
     sweet.service('sweet', ['$rootScope', service]);
